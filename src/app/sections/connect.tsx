@@ -20,17 +20,6 @@ import { isMinimal } from '@/app/utils';
 
 const ConnectWithMe: React.FC = () => {
 
-  const itemVariants = isMinimal
-    ? { hidden: {}, visible: {} }
-    : {
-        hidden: { opacity: 0, y: 20 },
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: { duration: 0.5, ease: 'easeOut' },
-        },
-      };
-
   const getRgbValues = (hexColor: string) => {
     const hex = hexColor.replace('#', '');
     const r = parseInt(hex.substring(0, 2), 16);

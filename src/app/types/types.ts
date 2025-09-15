@@ -77,18 +77,3 @@ export interface Project {
     infinite?: boolean;
   };
 }
-
-// 🌐 Social Media Connection: Professional Network Links
-export interface Social {
-  /** Name of the social platform */
-  name: string;
-
-  /** React icon component for the social platform */
-  icon: ReactElement;
-
-  /** Full URL to the social profile */
-  url: string;
-
-  /** Brand color of the social platform */
-  color: string;
-}
